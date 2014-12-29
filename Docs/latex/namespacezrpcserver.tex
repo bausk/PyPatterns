@@ -1,0 +1,39 @@
+\hypertarget{namespacezrpcserver}{\section{zrpcserver Namespace Reference}
+\label{namespacezrpcserver}\index{zrpcserver@{zrpcserver}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classzrpcserver_1_1_hello_r_p_c}{Hello\+R\+P\+C}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacezrpcserver_a27c4be0435b479044d8544312829e19f}{s} = zerorpc.\+Server(\hyperlink{classzrpcserver_1_1_hello_r_p_c}{Hello\+R\+P\+C}())
+\item 
+tuple \hyperlink{namespacezrpcserver_aba2558901917b86cf74044e3313df8d8}{context} = zmq.\+Context()
+\item 
+tuple \hyperlink{namespacezrpcserver_a5e4952d9f1e8548ca60fc87e02414711}{socket} = context.\+socket(zmq.\+R\+E\+P)
+\item 
+tuple \hyperlink{namespacezrpcserver_a3cf2b2246b68a156037b2a86b71282ff}{message} = socket.\+recv()
+\item 
+tuple \hyperlink{namespacezrpcserver_a867cc3b9e35ae551991976a86a47829d}{m2} = msgpack.\+unpackb(\hyperlink{namespacezrpcserver_a3cf2b2246b68a156037b2a86b71282ff}{message})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacezrpcserver_aba2558901917b86cf74044e3313df8d8}{\index{zrpcserver@{zrpcserver}!context@{context}}
+\index{context@{context}!zrpcserver@{zrpcserver}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}tuple zrpcserver.\+context = zmq.\+Context()}}\label{namespacezrpcserver_aba2558901917b86cf74044e3313df8d8}
+\hypertarget{namespacezrpcserver_a867cc3b9e35ae551991976a86a47829d}{\index{zrpcserver@{zrpcserver}!m2@{m2}}
+\index{m2@{m2}!zrpcserver@{zrpcserver}}
+\subsubsection[{m2}]{\setlength{\rightskip}{0pt plus 5cm}tuple zrpcserver.\+m2 = msgpack.\+unpackb({\bf message})}}\label{namespacezrpcserver_a867cc3b9e35ae551991976a86a47829d}
+\hypertarget{namespacezrpcserver_a3cf2b2246b68a156037b2a86b71282ff}{\index{zrpcserver@{zrpcserver}!message@{message}}
+\index{message@{message}!zrpcserver@{zrpcserver}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}tuple zrpcserver.\+message = socket.\+recv()}}\label{namespacezrpcserver_a3cf2b2246b68a156037b2a86b71282ff}
+\hypertarget{namespacezrpcserver_a27c4be0435b479044d8544312829e19f}{\index{zrpcserver@{zrpcserver}!s@{s}}
+\index{s@{s}!zrpcserver@{zrpcserver}}
+\subsubsection[{s}]{\setlength{\rightskip}{0pt plus 5cm}tuple zrpcserver.\+s = zerorpc.\+Server({\bf Hello\+R\+P\+C}())}}\label{namespacezrpcserver_a27c4be0435b479044d8544312829e19f}
+\hypertarget{namespacezrpcserver_a5e4952d9f1e8548ca60fc87e02414711}{\index{zrpcserver@{zrpcserver}!socket@{socket}}
+\index{socket@{socket}!zrpcserver@{zrpcserver}}
+\subsubsection[{socket}]{\setlength{\rightskip}{0pt plus 5cm}tuple zrpcserver.\+socket = context.\+socket(zmq.\+R\+E\+P)}}\label{namespacezrpcserver_a5e4952d9f1e8548ca60fc87e02414711}

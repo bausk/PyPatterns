@@ -1,0 +1,26 @@
+\hypertarget{zrpcserver_8py}{\section{D\+:/\+Dropbox/\+A\+S\+C\+O\+N\+Projects/\+Py\+Patterns/zrpcserver.py File Reference}
+\label{zrpcserver_8py}\index{D\+:/\+Dropbox/\+A\+S\+C\+O\+N\+Projects/\+Py\+Patterns/zrpcserver.\+py@{D\+:/\+Dropbox/\+A\+S\+C\+O\+N\+Projects/\+Py\+Patterns/zrpcserver.\+py}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classzrpcserver_1_1_hello_r_p_c}{zrpcserver.\+Hello\+R\+P\+C}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacezrpcserver}{zrpcserver}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacezrpcserver_a27c4be0435b479044d8544312829e19f}{zrpcserver.\+s} = zerorpc.\+Server(Hello\+R\+P\+C())
+\item 
+tuple \hyperlink{namespacezrpcserver_aba2558901917b86cf74044e3313df8d8}{zrpcserver.\+context} = zmq.\+Context()
+\item 
+tuple \hyperlink{namespacezrpcserver_a5e4952d9f1e8548ca60fc87e02414711}{zrpcserver.\+socket} = context.\+socket(zmq.\+R\+E\+P)
+\item 
+tuple \hyperlink{namespacezrpcserver_a3cf2b2246b68a156037b2a86b71282ff}{zrpcserver.\+message} = socket.\+recv()
+\item 
+tuple \hyperlink{namespacezrpcserver_a867cc3b9e35ae551991976a86a47829d}{zrpcserver.\+m2} = msgpack.\+unpackb(message)
+\end{DoxyCompactItemize}
